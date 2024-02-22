@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent"  >
+        <div class="day">
+          <span  id="title1" > DAY </span> <br />
+          <input type="number" placeholder="DD" id="dd" />
+          <div class="error" id="error-dd"></div>
+        </div>
+
+        <div class="month">
+          <span  id="title2"> MONTH </span> <br />
+          <input type="number" placeholder="MM" id="mm" />
+          <div class="error" id="error-mm"></div>
+        </div>
+
+        <div class="year">
+          <span  id="title3">YEAR</span> <br />
+          <input type="number" placeholder="YYYY" id="yy" />
+          <div class="error" id="error-yy"></div>
+        </div>
+        
+        <button type="button" id="sub"  onclick="valid()" style="width: 0px;height:0px;">
+
+          <img src="./assets/images/icon-arrow.svg" alt="" style="background-color: blueviolet;border-radius: 50%;" />
+        </button>
+      </div>
+      <div class="child">
+        <div> <span id="dis1">--</span> years</div>
+        <div><span id="dis2"> --</span> months</div>
+        <div><span id="dis3"> --</span> days</div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/Mohamed-Jameer">MOHAMED JAMEER N</a>.
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
