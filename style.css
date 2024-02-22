@@ -77,8 +77,15 @@ span {
 #sub{
   position: relative;
   top:63px;
-
+  cursor: pointer;
+  
 }
+
+#sub::after{
+  color: black;
+}
+
+
 
 .attribution{
   position: relative;
